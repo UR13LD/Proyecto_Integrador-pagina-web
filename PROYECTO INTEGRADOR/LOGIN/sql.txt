@@ -1,0 +1,12 @@
+CREATE DATABASE Inicio_De_Usuario DEFAULT CHARACTER SET 'utf8mb4' COLLATE 'utf8mb4_spanish_ci';
+
+USE Inicio_De_Usuario;
+
+CREATE TABLE IF NOT EXISTS Info_De_Usuario (
+    id int(50) NOT NULL AUTO_INCREMENT,
+    Usuario varchar(255),
+    Contrasena varchar(255),
+    PRIMARY KEY (id)
+);
+
+$sql="INSERT INTO Info_De_Usuario (Usuario, Contrasena) VALUES ('$Usuario', '$Contrasena')";
